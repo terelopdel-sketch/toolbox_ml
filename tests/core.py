@@ -1,7 +1,15 @@
 
 import pytest
 import pandas as pd
+import numpy as np
 from toolbox_ml.eda.core import describe_df, tipifica_variables
+from toolbox_ml.eda.core import (
+    get_features_num_regression,
+    plot_features_num_regression,
+    get_features_cat_regression,
+    plot_features_cat_regression
+)
+
 
 # Tests de describe_df
 
@@ -69,15 +77,6 @@ def test_tipifica_variables_caso_error():
     assert tipifica_variables("no soy un df", 5, 30.0) is None   # df inválido
     assert tipifica_variables(df, 5.5, 30.0)           is None   # umbral_categoria float
     assert tipifica_variables(df, 5, 110.0)            is None   # umbral_continua fuera de rango
-import pytest
-import pandas as pd
-import numpy as np
-from toolbox_ml.eda.core import (
-    get_features_num_regression,
-    plot_features_num_regression,
-    get_features_cat_regression,
-    plot_features_cat_regression
-)
 
 # ─────────────────────────────────────────────
 # Fixtures (datos de prueba)
