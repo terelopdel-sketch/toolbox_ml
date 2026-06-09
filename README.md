@@ -10,8 +10,8 @@ de features para proyectos de Machine Learning.
 | Nombre | Rol | Responsabilidad |
 |---|---|---|
 | Mª Teresa López | Scrum Master | Setup, integración y notebook demo |
-| Raquel Martínez | Desarrollador 1 | `describe_df`, `tipifica_variables` |
-| Ali Madriz | Desarrollador 2 | `get/plot_features_num_regression`, `get/plot_features_cat_regression` |
+| Ali Madriz | Desarrollador 1 | `describe_df`, `tipifica_variables` |
+| Raquel Martinez | Desarrollador 2 | `get/plot_features_num_regression`, `get/plot_features_cat_regression` |
 
 ---
 
